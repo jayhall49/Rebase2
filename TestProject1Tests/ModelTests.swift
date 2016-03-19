@@ -7,6 +7,8 @@
 //
 
 import XCTest
+@testable import TestProjectOne
+
 
 class ModelTests: XCTestCase {
 
@@ -23,6 +25,18 @@ class ModelTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let map = frameSequence
+        
+        var byteCount = 0
+        
+        for j in 0..<map.count {
+            let sampleType = map[j]
+            byteCount += sampleType.groupLength
+        }
+        
+        
+        XCTAssert(byteCount == 560, "Map error: byte count \(byteCount) != 560.")
     }
 
     func testPerformanceExample() {

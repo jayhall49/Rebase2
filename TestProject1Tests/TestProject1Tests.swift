@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import TestProject1
+@testable import TestProjectOne
 
-class TestProject1Tests: XCTestCase {
+class TestProjectOneTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
