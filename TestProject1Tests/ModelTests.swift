@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TestProjectOne
+//@testable import TestProjectOne
 
 
 class ModelTests: XCTestCase {
